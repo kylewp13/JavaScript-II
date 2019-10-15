@@ -3,6 +3,18 @@
 // Keep it simple! Remember a closure is just a function
 // that manipulates variables defined in the outer scope.
 // The outer scope can be a parent function, or the top level of the script.
+const me = () => {
+  const firstName = "Kyle"
+  const lastName = "Porter"
+  const favCity = "Chicago"
+    function whereILive (){
+      const city = "jacksonville"
+      return `Hi my name is ${firstName} ${lastName} and I live in ${city} but im moving to ${favCity}.`;
+    };// close of whereILive
+    return whereILive();
+};//close of kyle
+
+console.log(me());
 
 
 /* STRETCH PROBLEMS, Do not attempt until you have completed all previous tasks for today's project files */
